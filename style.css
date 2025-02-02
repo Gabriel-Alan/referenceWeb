@@ -80,41 +80,28 @@ a {
 }
 
 .link {
-    display: block;
-    position: relative;
     padding: 2rem;
     font-size: 2.4rem;
     text-transform: uppercase;
     color: var(--black-color1);
+    transition: 0.2s;
 }
-
-.line-blue::after {
-    content: '';
-    position: absolute;
-    bottom: 2.5rem;
-    left: 50%;
-    width: 0;
-    height: 0.3rem;
-    background: var(--secondary-color);
-    transition: all 300ms ease-in-out;
+.link:hover{
+    font-weight: bold;
+    letter-spacing: 2px;
 }
-
-.line-blue:hover::after {
-    width: 50%;
-    left: 25%;
+.link-blue{
+    background-color: #024370;
+    padding: 2rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.2s;
 }
-
-.blue-box {
-    color: white; 
-    transition: transform 0.2s ease-in;
-    background: var(--secondary-color);  
-
+.link-blue:hover{
+    font-weight: bold;
+    letter-spacing: 2px;
 }
-.blue-box:hover {
-    transform: scale(1.02);
-}
-
-
 
 .intro-content {
     display: flex;
